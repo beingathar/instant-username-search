@@ -1,19 +1,17 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-deprecated */
 import React, { useState, useEffect, useMemo } from 'react';
 import { IntlProvider, addLocaleData } from 'react-intl';
-import Search from './Search';
-import Results from './Results';
-import Footer from './Footer';
-import Privacy from './Privacy';
-import Terms from './Terms';
-import LandingPage from './Landing';
+import Search from './components/Search';
+import Results from './components/Results';
+import Footer from './components/Footer';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
+import LandingPage from './components/Landing';
 
-import locales from '../translations/locales';
-import translations from '../translations';
+import locales from './translations/locales';
+import translations from './translations';
 
 import 'antd/dist/antd.css';
-import '../styles/App.css';
+import './styles/App.css';
 
 window.apiUrl = process.env.REACT_APP_API_URL;
 
